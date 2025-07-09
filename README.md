@@ -75,7 +75,7 @@ A variável de interesse é binária (0 = sem AVC, 1 = com AVC). A média é 0,0
 
 <h2>4° Conclusões</h2>
 
-<p>A análise estatística revelou que as seguintes variáveis <strong>têm associação estatisticamente significativa com a ocorrência de AVC (<code>stroke</code>)</strong>:</p>
+<p>A análise estatística revelou que as seguintes variáveis têm associação estatisticamente significativa com a ocorrência de AVC (stroke):</p>
 <ul>
   <li>idade</li>
   <li>hipertensão</li>
@@ -85,4 +85,4 @@ A variável de interesse é binária (0 = sem AVC, 1 = com AVC). A média é 0,0
   <li>fumante</li>
 </ul>
 
-<p>Por outro lado, as variáveis <strong>gênero</strong> e <strong>tipo de residência</strong> não apresentaram associação significativa com a ocorrência de AVC.</p>
+<p>Por outro lado, as variáveis gênero e tipo de residência não apresentaram associação significativa com a ocorrência de AVC.</p>
