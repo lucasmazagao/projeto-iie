@@ -26,6 +26,9 @@
 <p>
 A média de idade da amostra é de aproximadamente 43,23 anos, com um desvio padrão de 22,61 anos, indicando uma dispersão considerável ao redor da média. A mediana é 45 anos, enquanto o primeiro e terceiro quartis são, respectivamente, 25 e 61 anos. Isso mostra que 50% dos indivíduos estão entre 25 e 61 anos, indicando uma amostra predominantemente adulta. A diferença relativamente pequena entre a média e a mediana sugere que a distribuição de idade é aproximadamente simétrica.
 </p>
+<p>
+Ademais, no box-plot, percebe-se que mais de 75% da população que sofreu AVC possui idade acima de 60 anos.
+</p>
 
 <h3>Variável hypertension/hipertensão</h3>
 <p>
