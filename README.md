@@ -4,7 +4,7 @@
 
 <p>O relatório tem como objetivo identificar quais variáveis de um conjunto de dados estão estatisticamente associadas à ocorrência de acidente vascular cerebral (variável ‘stroke’). A intenção é verificar, com base em testes estatísticos, se as variáveis disponíveis na tabela de dados possuem influência significativa sobre a dependente, utilizando os testes de normalidade e de análise de variáveis.</p>
 
-<p>O código está presente no link: <a>href="https://colab.research.google.com/drive/16ElmbMhra_F96cJoM6JUddk586E2K-u_#scrollTo=EVlqiSORMtEo"</a></p>
+<p>O código está presente no link: <a href="https://colab.research.google.com/drive/16ElmbMhra_F96cJoM6JUddk586E2K-u_#scrollTo=EVlqiSORMtEo"></a></p>
 
 <p>Foram avaliadas as seguintes variáveis como potenciais fatores explicativos:</p>
 <ul>
