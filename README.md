@@ -2,7 +2,9 @@
 
 <h2>Objetivos</h2>
 
-<p>O presente relatório tem como objetivo identificar quais variáveis de um conjunto de dados estão estatisticamente associadas à ocorrência de acidente vascular cerebral (variável ‘stroke’). A intenção é verificar, com base em testes estatísticos, se as variáveis disponíveis na tabela de dados possuem influência significativa sobre a dependente, utilizando os testes de normalidade e de análise de variáveis.</p>
+<p>O relatório tem como objetivo identificar quais variáveis de um conjunto de dados estão estatisticamente associadas à ocorrência de acidente vascular cerebral (variável ‘stroke’). A intenção é verificar, com base em testes estatísticos, se as variáveis disponíveis na tabela de dados possuem influência significativa sobre a dependente, utilizando os testes de normalidade e de análise de variáveis.</p>
+
+<p>O código está presente no link: <a>href="https://colab.research.google.com/drive/16ElmbMhra_F96cJoM6JUddk586E2K-u_#scrollTo=EVlqiSORMtEo"</a></p>
 
 <p>Foram avaliadas as seguintes variáveis como potenciais fatores explicativos:</p>
 <ul>
@@ -18,13 +20,35 @@
 
 <p>A variável de interesse é stroke, representando se o paciente teve ou não um AVC.</p>
 
-<h2>1° Teste de normalidade da variável dependente</h2>
+<h2>1° Estatísticas descritivas das variáveis numéricas</h2>
+
+<h3>Variável age/idade</h3>
+<p>
+A média de idade da amostra é de aproximadamente 43,23 anos, com um desvio padrão de 22,61 anos, indicando uma dispersão considerável ao redor da média. A mediana é 45 anos, enquanto o primeiro e terceiro quartis são, respectivamente, 25 e 61 anos. Isso mostra que 50% dos indivíduos estão entre 25 e 61 anos, indicando uma amostra predominantemente adulta. A diferença relativamente pequena entre a média e a mediana sugere que a distribuição de idade é aproximadamente simétrica.
+</p>
+
+<h3>Variável hypertension/hipertensão</h3>
+<p>
+A variável é binária (0 = não tem hipertensão, 1 = tem). A média é de 0,097, o que corresponde a cerca de 9,7% da amostra com diagnóstico de hipertensão, com desvio padrão de 0,296. A mediana e os quartis são zero, o que indica que mais da metade da amostra não apresenta hipertensão.
+</p>
+
+<h3>Variável heart_disease/doença cardíaca</h3>
+<p>
+Também uma variável binária, apresenta uma média de 0,054 com desvio padrão de 0,226, indicando que 5,4% da amostra tem doença cardíaca. A mediana e os quartis são iguais a zero, o que confirma a forte predominância da ausência de doença cardíaca na população observada.
+</p>
+
+<h3>Variável stroke/AVC</h3>
+<p>
+A variável de interesse é binária (0 = sem AVC, 1 = com AVC). A média é 0,0487, o que significa que 4,87% dos indivíduos tiveram AVC, tendo desvio padrão de 0,215. A mediana e os quartis são todos iguais a zero, confirmando que a imensa maioria da amostra não sofreu AVC.
+</p>
+
+<h2>2° Teste de normalidade da variável dependente</h2>
 
 <p>Antes da escolha dos testes estatísticos comparativos, foi realizada a verificação da normalidade de stroke, que é fundamental para determinar se testes paramétricos (como ANOVA ou t-test) seriam apropriados ou se testes não-paramétricos deveriam ser empregados. Para isso, foram aplicados os seguintes testes de normalidade: Shapiro-Wilk, Kolmogorov-Smirnov, e visualizando os gráficos por QQ-plot. Ademais, para todos os testes o nível de significância será de 0,05 ou 5%.</p>
 
 <p>Os dois testes formais resultaram em p-valores próximos a 0,00, de forma que indica rejeição das hipóteses nulas. Sendo ambas ‘há evidência para normalidade dos dados’. Igualmente, no gráfico pode-se observar que os dados não seguem a linha teórica da normal. Sendo assim, consideramos que os dados não podem ser considerados normais, portanto, seguiremos com testes não-paramétricos.</p>
 
-<h2>2° Teste e avaliação da influência das variáveis independentes</h2>
+<h2>3° Teste e avaliação da influência das variáveis independentes</h2>
 
 <p>Para investigar a relação entre as variáveis explicativas categóricas e a variável stroke, foram realizados testes estatísticos de comparação entre grupos. Empregando o teste Mann-Whitney U para variáveis com duas categorias, e Kruskal-Wallis para variáveis com três ou mais categorias. Sendo os resultados:</p>
 
@@ -49,7 +73,7 @@
 <h3>Fumante (Kruskal-Wallis)</h3>
 <p>O p-valor de 2.09e-06 mostra uma associação estatisticamente significativa entre tabagismo e stroke. Indivíduos que fumam ou fumaram apresentam distribuições distintas de ocorrência de AVC em comparação com os que nunca fumaram ou com status desconhecido.</p>
 
-<h2>3° Conclusões</h2>
+<h2>4° Conclusões</h2>
 
 <p>A análise estatística revelou que as seguintes variáveis <strong>têm associação estatisticamente significativa com a ocorrência de AVC (<code>stroke</code>)</strong>:</p>
 <ul>
